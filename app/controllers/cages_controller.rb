@@ -1,7 +1,7 @@
 class CagesController < ApplicationController
 
   def index
-    @cages = Cage.all
+    @cages = Cage.order(year: :desc)
   end
 
   def new

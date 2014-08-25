@@ -25,5 +25,4 @@ feature "CageFlix" do
     expect(page).to have_content "Year is not a number"
   end
 
-
 end
