@@ -16,5 +16,14 @@ feature "CageFlix" do
     expect(page).to have_content "A sheriff investigating the disappearance blah blah blah"
   end
 
+  scenario "user cannot add movie without name and year" do
+    visit '/'
+    click_on "Add Movie"
+    click_on "Create Movie"
+    expect(page).to have_content "Name can't be blank"
+    expect(page).to have_content "Year can't be blank"
+    expect(page).to have_content "Year is not a number"
+  end
+
 
 end

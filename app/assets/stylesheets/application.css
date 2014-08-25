@@ -17,3 +17,11 @@
 .bold {
     font-weight: bold;
 }
+
+.errors {
+    color: red
+}
+
+.field_with_errors {
+    display: inline;
+}
